@@ -19,6 +19,8 @@ pub fn build(b: *std.Build) void {
     lib.installHeadersDirectory("GLES3", "GLES3");
     lib.installHeadersDirectory("GLSC", "GLSC");
     lib.installHeadersDirectory("GLSC2", "GLSC2");
+    lib.installHeadersDirectory("EGL", "EGL");
+    lib.installHeadersDirectory("KHR", "KHR");
 
     b.installArtifact(lib);
 }
